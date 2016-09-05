@@ -1,0 +1,14 @@
+# Tool/automation software engineer challenge
+
+### OVERVIEW
+This repository contain a very simple unit test that create a database, insert data and read it.
+Currently the test uses http://hsqldb.org/[HSQL] as RDBMS.
+
+### GOALS
+* Change the provided test to use postgreSQL instead of HSQL.
+* The resulting test must be able to run in an unknown machine, it may or may not have postgreSQL installed.
+
+### SPECIFICATIONS
+* This challenge must be completed after 24 hours
+* The results must be either submit by email or pull request
+* In case of any doubts make a judgment call and justify it
