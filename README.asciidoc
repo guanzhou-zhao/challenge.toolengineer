@@ -12,3 +12,5 @@ Currently the test uses http://hsqldb.org/[HSQL] as RDBMS.
 * This challenge must be completed after 24 hours
 * The results must be either submit by email or pull request
 * In case of any doubts make a judgment call and justify it
+* We need an integration test, so, no mocking
+* There is no server you can rely on with postgreSQL running
