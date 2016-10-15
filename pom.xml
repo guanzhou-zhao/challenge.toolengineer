@@ -26,28 +26,28 @@
       <version>2.3.4</version>
       <scope>runtime</scope>
     </dependency>
-    
-	<dependency>
+
+  <dependency>
       <groupId>ru.yandex.qatools.embed</groupId>
       <artifactId>postgresql-embedded</artifactId>
       <version>1.15</version>
       <scope>test</scope>
-	</dependency>
-	
-	<dependency>
+  </dependency>
+  
+  <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
       <version>1.7.10</version>
       <scope>test</scope>
-	</dependency>
-	
-	<dependency>
+  </dependency>
+  
+  <dependency>
     <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>9.4.1209</version>
       <scope>test</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
