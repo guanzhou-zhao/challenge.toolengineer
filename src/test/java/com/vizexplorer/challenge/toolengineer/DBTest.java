@@ -31,21 +31,21 @@ public class DBTest
   public static void openConnection() throws SQLException, IOException
   {
     String databaseName = "challenge_db";
-	  String userName = "SA";
-	  String password = "123";
+    String userName = "SA";
+    String password = "123";
 
-	  // start Postgres service
-	  final PostgresStarter<PostgresExecutable, PostgresProcess> runtime = PostgresStarter.getDefaultInstance();
-	  final PostgresConfig config = PostgresConfig.defaultWithDbName(databaseName, userName, password);
-	  PostgresExecutable exec = runtime.prepare(config);
-	  process = exec.start();
+    // start Postgres service
+    final PostgresStarter<PostgresExecutable, PostgresProcess> runtime = PostgresStarter.getDefaultInstance();
+    final PostgresConfig config = PostgresConfig.defaultWithDbName(databaseName, userName, password);
+    PostgresExecutable exec = runtime.prepare(config);
+    process = exec.start();
 
-	 // connecting to a running Postgres
-	  String url = String.format("jdbc:postgresql://%s:%s/%s",
-	          config.net().host(),
-	          config.net().port(),
-	          config.storage().dbName()
-	  );
+   // connecting to a running Postgres
+    String url = String.format("jdbc:postgresql://%s:%s/%s",
+            config.net().host(),
+            config.net().port(),
+            config.storage().dbName()
+    );
     connection = getConnection(url, userName, password);
 
     try (Statement stmt = connection.createStatement();)
